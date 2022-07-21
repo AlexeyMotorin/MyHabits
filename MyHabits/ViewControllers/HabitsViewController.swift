@@ -19,11 +19,14 @@ class HabitsViewController: UIViewController {
         title = "Сегодня"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddHabitVC))
-       
     }
     
     @objc private func showAddHabitVC() {
-        
+        let habitVC = HabitViewController()
+        habitVC.deleteButton.isHidden = true
+        let vc = UINavigationController(rootViewController: habitVC)
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
 }
 
