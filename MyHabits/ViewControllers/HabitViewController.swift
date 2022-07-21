@@ -209,20 +209,17 @@ class HabitViewController: UIViewController {
     // получаем дату из даты пикера
     @objc private func valueChanged(_ sender: UIDatePicker) {
         nameTextField.endEditing(true)
-        
         let formatter = DateFormatter()
         formatter.dateFormat = "HH.mm"
-        
         let dataValue = formatter.string(from: sender.date)
-        let attribute =  [NSAttributedString.Key.foregroundColor: ColorStyle.purple.colorSetings, NSAttributedString.Key.font: TextFontStyle.body.textFont]
+        let attribute =  [NSAttributedString.Key.foregroundColor: ColorStyle.purple.colorSetings,
+                          NSAttributedString.Key.font: TextFontStyle.body.textFont]
         let atrrString = NSAttributedString(string: dataValue, attributes: attribute)
         
         dateLabel.text =  "Каждый день в " + dataValue
         
-        
         let baseStr = NSMutableAttributedString(string: "Каждый день в ",
-                                                attributes: [NSAttributedString.Key.font: TextFontStyle.body.textFont])
-        
+                                                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         baseStr.append(atrrString)
         dateLabel.attributedText = baseStr
         
@@ -259,11 +256,6 @@ class HabitViewController: UIViewController {
         alert.addAction(deleteAlert)
         present(alert, animated: true)
     }
-    
-    private func getDate(date: Date) {
-        
-    }
-    
 }
 
 extension HabitViewController: UITextFieldDelegate {

@@ -8,12 +8,7 @@
 import UIKit
 
 class InfoViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setingsVC()
-    }
-    
+
     private lazy var scrollView: UIScrollView = {
         let scroll = UIScrollView()
         scroll.translatesAutoresizingMaskIntoConstraints = false
@@ -45,6 +40,11 @@ class InfoViewController: UIViewController {
         return label
     }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setingsVC()
+    }
+
     private func setingsVC() {
         view.backgroundColor = ColorStyle.white.colorSetings
         navigationController?.navigationBar.prefersLargeTitles = false
@@ -76,6 +76,5 @@ class InfoViewController: UIViewController {
             textLabel.leadingAnchor.constraint(equalTo: contentMode.leadingAnchor, constant: 20),
             textLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
-        
     }
 }

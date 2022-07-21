@@ -19,6 +19,8 @@
 		5B6BD0532889285C0096D53D /* HabitsDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD0522889285C0096D53D /* HabitsDesign.swift */; };
 		5B6BD05628892ADE0096D53D /* TextForInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05528892ADE0096D53D /* TextForInfoVC.swift */; };
 		5B6BD05828893BAB0096D53D /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05728893BAB0096D53D /* HabitViewController.swift */; };
+		5B6BD05B2889B2230096D53D /* ProgressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05A2889B2230096D53D /* ProgressCollectionViewCell.swift */; };
+		5B6BD05D2889B3760096D53D /* HabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05C2889B3760096D53D /* HabitCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		5B6BD0522889285C0096D53D /* HabitsDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsDesign.swift; sourceTree = "<group>"; };
 		5B6BD05528892ADE0096D53D /* TextForInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextForInfoVC.swift; sourceTree = "<group>"; };
 		5B6BD05728893BAB0096D53D /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
+		5B6BD05A2889B2230096D53D /* ProgressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCollectionViewCell.swift; sourceTree = "<group>"; };
+		5B6BD05C2889B3760096D53D /* HabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				5B6BD0372888959A0096D53D /* SceneDelegate.swift */,
 				5B6BD050288921E70096D53D /* TabViewController.swift */,
 				5B6BD04F2889218C0096D53D /* ViewControllers */,
+				5B6BD0592889B2010096D53D /* CollectionCell */,
 				5B6BD0542889286C0096D53D /* Store */,
 				5B6BD03E2888959B0096D53D /* Assets.xcassets */,
 				5B6BD0402888959B0096D53D /* LaunchScreen.storyboard */,
@@ -99,6 +104,15 @@
 				5B6BD05528892ADE0096D53D /* TextForInfoVC.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		5B6BD0592889B2010096D53D /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				5B6BD05A2889B2230096D53D /* ProgressCollectionViewCell.swift */,
+				5B6BD05C2889B3760096D53D /* HabitCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +190,10 @@
 				5B6BD04A288897960096D53D /* HabitsStore.swift in Sources */,
 				5B6BD03A2888959A0096D53D /* HabitsViewController.swift in Sources */,
 				5B6BD0362888959A0096D53D /* AppDelegate.swift in Sources */,
+				5B6BD05D2889B3760096D53D /* HabitCollectionViewCell.swift in Sources */,
 				5B6BD0532889285C0096D53D /* HabitsDesign.swift in Sources */,
 				5B6BD0382888959A0096D53D /* SceneDelegate.swift in Sources */,
+				5B6BD05B2889B2230096D53D /* ProgressCollectionViewCell.swift in Sources */,
 				5B6BD05628892ADE0096D53D /* TextForInfoVC.swift in Sources */,
 				5B6BD05828893BAB0096D53D /* HabitViewController.swift in Sources */,
 				5B6BD04E288921850096D53D /* InfoViewController.swift in Sources */,
