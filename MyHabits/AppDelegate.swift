@@ -11,7 +11,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+         let appearance = UINavigationBarAppearance()
+         appearance.backgroundColor = UIColor(displayP3Red: 248/255, green: 248/255, blue: 248/255, alpha: 1)
+         appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+
+        let color = ColorStyle.purple.colorSetings
+         
+         UINavigationBar.appearance().tintColor = color
+         UINavigationBar.appearance().standardAppearance = appearance
+         UINavigationBar.appearance().compactAppearance = appearance
+         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+         UINavigationBar.appearance().prefersLargeTitles = true
+         
+         UITabBar.appearance().tintColor = color
+        
         return true
     }
 
