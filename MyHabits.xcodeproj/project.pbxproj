@@ -21,6 +21,7 @@
 		5B6BD05828893BAB0096D53D /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05728893BAB0096D53D /* HabitViewController.swift */; };
 		5B6BD05B2889B2230096D53D /* ProgressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05A2889B2230096D53D /* ProgressCollectionViewCell.swift */; };
 		5B6BD05D2889B3760096D53D /* HabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05C2889B3760096D53D /* HabitCollectionViewCell.swift */; };
+		5B6BD05F288BE0850096D53D /* HabitDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BD05E288BE0850096D53D /* HabitDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5B6BD05728893BAB0096D53D /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
 		5B6BD05A2889B2230096D53D /* ProgressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B6BD05C2889B3760096D53D /* HabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewCell.swift; sourceTree = "<group>"; };
+		5B6BD05E288BE0850096D53D /* HabitDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				5B6BD0392888959A0096D53D /* HabitsViewController.swift */,
 				5B6BD04D288921850096D53D /* InfoViewController.swift */,
 				5B6BD05728893BAB0096D53D /* HabitViewController.swift */,
+				5B6BD05E288BE0850096D53D /* HabitDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				5B6BD04A288897960096D53D /* HabitsStore.swift in Sources */,
 				5B6BD03A2888959A0096D53D /* HabitsViewController.swift in Sources */,
 				5B6BD0362888959A0096D53D /* AppDelegate.swift in Sources */,
+				5B6BD05F288BE0850096D53D /* HabitDetailsViewController.swift in Sources */,
 				5B6BD05D2889B3760096D53D /* HabitCollectionViewCell.swift in Sources */,
 				5B6BD0532889285C0096D53D /* HabitsDesign.swift in Sources */,
 				5B6BD0382888959A0096D53D /* SceneDelegate.swift in Sources */,

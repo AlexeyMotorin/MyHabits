@@ -50,7 +50,6 @@ class HabitsViewController: UIViewController {
         view.backgroundColor = ColorStyle.white.colorSetings
         title = "Сегодня"
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .automatic
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddHabitVC))
         
         view.addSubview(contentView)
@@ -134,8 +133,10 @@ extension HabitsViewController: UICollectionViewDelegateFlowLayout, UICollection
     
     // Показ данных о выбранной привычке
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
+        let habitDetailsViewController = HabitDetailsViewController()
+        habitDetailsViewController.habit = HabitsStore.shared.habits[indexPath.row]
+        habitDetailsViewController.numberHubitInArray = indexPath.row
+        navigationController?.pushViewController(habitDetailsViewController, animated: true)
     }
     
 }

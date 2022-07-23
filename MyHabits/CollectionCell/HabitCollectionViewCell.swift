@@ -20,10 +20,9 @@ class HabitCollectionViewCell: UICollectionViewCell {
             nameLabel.text = habit?.name
             nameLabel.textColor = habit?.color
             timeLabel.text = habit?.dateString
+            counterLabel.text = "Счетчик " + String(habit!.trackDates.count)
     
             guard let isAlreadyTakenToday = habit?.isAlreadyTakenToday else { return }
-
-            
             if isAlreadyTakenToday {
                 doneButtom.backgroundColor = habit?.color
                 doneButtom.layer.borderColor = habit?.color.cgColor
