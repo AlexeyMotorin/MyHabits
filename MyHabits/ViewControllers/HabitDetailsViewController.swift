@@ -12,6 +12,8 @@ class HabitDetailsViewController: UIViewController {
     var habit: Habit?
     var numberHubitInArray: Int?
     
+    let array = HabitsStore.shared.dates.reversed()
+    
     private var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -74,6 +76,7 @@ extension HabitDetailsViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Default", for: indexPath)
         cell.textLabel?.text = HabitsStore.shared.trackDateString(forIndex: indexPath.row)
+        
         // проверяем была ты трекнута привычка в конкретный день, если да, ставим checkmark
         if let habit = habit {
             if HabitsStore.shared.habit(habit, isTrackedIn: HabitsStore.shared.dates[indexPath.row]) {

@@ -236,6 +236,7 @@ class HabitViewController: UIViewController {
         HabitsStore.shared.habits[numberHubitInArray].name = newHabit.name
         HabitsStore.shared.habits[numberHubitInArray].color = newHabit.color
         HabitsStore.shared.habits[numberHubitInArray].date = newHabit.date
+        HabitsStore.shared.save()
         dismiss(animated: true)
     }
     

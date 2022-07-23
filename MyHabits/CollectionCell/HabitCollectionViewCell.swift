@@ -23,6 +23,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
             counterLabel.text = "Счетчик " + String(habit!.trackDates.count)
     
             guard let isAlreadyTakenToday = habit?.isAlreadyTakenToday else { return }
+            
             if isAlreadyTakenToday {
                 doneButtom.backgroundColor = habit?.color
                 doneButtom.layer.borderColor = habit?.color.cgColor
@@ -127,11 +128,11 @@ class HabitCollectionViewCell: UICollectionViewCell {
     }
     
     @objc private func doneHabit() {
-        
         guard let habit = habit else { return }
+        if habit.isAlreadyTakenToday {
+            return
+        }
         HabitsStore.shared.track(habit)
         delegate?.reloadData()
-        
-       
     }
 }

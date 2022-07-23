@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon-1024px" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-q2-a7Z">
-                                <rect key="frame" x="150" y="391" width="114" height="114"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-q2-a7Z">
+                                <rect key="frame" x="120" y="361" width="174" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Qcs-q2-a7Z" secondAttribute="height" id="OIn-sQ-kxN"/>
                                 </constraints>
@@ -36,9 +36,8 @@
                         <constraints>
                             <constraint firstItem="Qcs-q2-a7Z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9xp-M5-EW1"/>
                             <constraint firstItem="Qcs-q2-a7Z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Jit-ja-l3t"/>
-                            <constraint firstItem="Qcs-q2-a7Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="OcD-uI-UVn"/>
+                            <constraint firstItem="Qcs-q2-a7Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="OcD-uI-UVn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f1f-w7-nKI" secondAttribute="bottom" constant="20" id="TjK-Gc-QVH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qcs-q2-a7Z" secondAttribute="trailing" constant="150" id="Yoc-BW-rtS"/>
                             <constraint firstItem="f1f-w7-nKI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="aqz-Sr-fZs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f1f-w7-nKI" secondAttribute="trailing" constant="10" id="rRf-oB-vE6"/>
                         </constraints>
@@ -50,6 +49,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppIcon-1024px" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="main_icon" width="1024" height="1024"/>
     </resources>
 </document>

@@ -49,7 +49,7 @@ class HabitsViewController: UIViewController {
     private func setingsVC() {
         view.backgroundColor = ColorStyle.white.colorSetings
         title = "Сегодня"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddHabitVC))
         
         view.addSubview(contentView)
