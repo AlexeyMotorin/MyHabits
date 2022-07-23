@@ -6,4 +6,4 @@
 * Использование и настройка визуальных компонентов;
 * Использование UITableView, UICollectionView и кастомных ячеек.
 
-<img src="https://github.com/Pussmal/MyHabits/blob/main/screen/LaunchScreen.png?raw=true" height="32"/></h1>
+<img src="https://github.com/Pussmal/MyHabits/blob/main/screen/LaunchScreen.png?raw=true" height="500"/></h1>
